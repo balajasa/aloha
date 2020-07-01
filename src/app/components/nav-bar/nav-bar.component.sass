@@ -1,0 +1,129 @@
+ul 
+    list-style: none
+    margin: 0
+    padding: 0
+
+.wrap
+    display: flex
+    position: relative
+    justify-content: space-between
+    background-color: #20b2aa
+    // overflow: hidden
+
+.sidebar 
+    background-color: #20b2aa
+    // border: 1px solid #ccc
+    position: relative
+
+.sidebar-open
+    padding: 20px 22px
+    color: #f5f5f5
+    display: inline-block
+    text-decoration: none
+    line-height: 1.5
+
+// .sidebar-close
+//     padding: 20px 22px
+//     color: #f5f5f5
+//     display: inline-block
+//     // display: none
+//     text-decoration: none
+//     line-height: 1.5  
+//     position: absolute
+//     top: 0
+
+.sidebar-menu
+    width: 200px
+    height: 100vh
+    background-color: #30475e
+    position: absolute
+    z-index: 99
+    top: 64px
+    left: 0
+    display: none
+    // padding: 28px
+
+.sidebar a:hover > ul.sidebar-menu
+    display: block    
+    // transform: translateX(270px)
+    transition: all 4s ease-out
+
+.sidebar-menu li
+    padding: 24px 32px
+    text-align: center
+
+.sidebar-menu li:hover
+    background-color: #66B3FF
+
+.sidebar-menu a
+    color: #ffffff
+
+@media ( max-width: 768px )
+    .sidebar-open
+        padding: 16px 18px
+
+    .sidebar-menu        
+        top: 56px
+
+
+// navbar
+ul.dropdown-menu
+    // border: 1px solid #ccc
+    display: inline-block
+
+ul.dropdown-menu li
+    position: relative
+    white-space: nowrap
+    // border-right: 1px solid #ccc
+    // padding: 15px 20px
+
+ul.dropdown-menu > li:last-child
+    border-right: none
+  
+ul.dropdown-menu > li
+    float: left
+    background-color: #20b2aa
+  
+ul.dropdown-menu a
+    // background-color: #20b2aa
+    padding: 20px 22px
+    color: #f5f5f5
+    display: block
+    text-decoration: none
+    line-height: 1.5
+
+ul.dropdown-menu a:hover
+    background-color: #008080
+    // color: #20b2aa
+
+ul.dropdown-menu li:hover > a
+    background-color: #008080
+  
+ul.dropdown-menu ul
+    background-color: #20b2aa
+    position: absolute
+    z-index: 99
+    left: -1px
+    display: none
+  
+ul.dropdown-menu ul li
+    border-bottom: 1px solid #ccc
+
+ul.dropdown-menu ul li:last-child
+    border-bottom: none
+  
+ul.dropdown-menu ul ul
+    z-index: 999
+    top: 8px
+    left: 100%
+  
+ul.dropdown-menu li:hover > ul
+    display: block
+
+
+@media ( max-width: 768px )
+    .dropdown-menu
+        font-size: 14px
+
+    ul.dropdown-menu a
+        padding: 16px 18px

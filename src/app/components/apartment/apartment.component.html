@@ -1,0 +1,177 @@
+<div class="wrap is-active">
+    <nav class="sidebar sidebar-show">
+        <div class="sidebar-container">
+            <i class="fas fa-times remove"></i>
+            <div class="sidebar-title">
+                <h3>Rental</h3>
+                <h3>From $99</h3>
+                <p>per night</p>
+                <hr>
+            </div>
+            <form class="sidebar-form">
+                <p>
+                    <label for="checkin">
+                        <i class="far fa-calendar-check"></i>
+                        Check In
+                    </label>
+                </p>
+                <input type="date" placeholder="YYYY-MM-DD" name="checkin">
+                <p>
+                    <label for="checkout">
+                        <i class="far fa-calendar-times"></i>
+                        Check Out
+                    </label>
+                </p>
+                <input type="date" placeholder="YYYY-MM-DD" name="checkout">
+                <p>
+                    <label for="adults">
+                        <i class="fas fa-male"></i>
+                        Adults
+                    </label>
+                </p>
+                <input type="number" value="1" name="adults" max="6" min="1">
+                <p>
+                    <label for="kids">
+                        <i class="fas fa-baby"></i>
+                        Kids
+                    </label>
+                </p>
+                <input type="number" value="0" name="kids" max="6" min="0">
+                <p>
+                    <button class="btn" type="submit">
+                    <i class="fas fa-search mr-16"></i>
+                    Search availability
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="barbox">
+            <a href="#" class="baritem"><i class="fas fa-building"></i> Apartment</a>
+            <a href="#" class="baritem"><i class="fas fa-rss-square"></i> Subscribe</a>
+            <a href="#" class="baritem"><i class="fas fa-envelope-open"></i> Contact</a>
+        </div>
+    </nav>
+    <!-- rwd menu -->
+    <header class="mb-bar">
+        <ul class="mb-list">
+            <li class="mb-baritem">Rental</li>
+            <li class="mb-baritem"><a href="#" class="mb-toggle"><i class="fas fa-bars"></i></a></li>
+        </ul>
+        <div class="overlay"></div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="main-title">The Apartment</div>
+            <div class="banner" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                <div class="pictag">
+                    <p>Dining Room</p>
+                </div>
+            </div>
+            <div class="banner" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                <div class="pictag">
+                    <p>Bedroom</p>
+                </div>
+            </div>
+            <div class="banner" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1571843439991-dd2b8e051966?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                <div class="pictag">
+                    <p>Kitchen</p>
+                </div>
+            </div>
+            <div class="banner" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1574739782812-9b064e1efeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                <div class="pictag">
+                    <p>Living Room</p>
+                </div>
+            </div>
+        </div>
+        <div class="picbox">
+            <div class="picitem">
+                <img class="pic-demo pic-opacity pic-opacity-off" src="https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" style="width:100%;cursor:pointer;">
+            </div>
+            <div class="picitem">
+                <img class="pic-demo pic-opacity" src="https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" style="width:100%;cursor:pointer;">
+            </div>
+            <div class="picitem">
+                <img class="pic-demo pic-opacity" src="https://images.unsplash.com/photo-1571843439991-dd2b8e051966?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" style="width:100%;cursor:pointer;">
+            </div>
+            <div class="picitem">
+                <img class="pic-demo pic-opacity" src="https://images.unsplash.com/photo-1574739782812-9b064e1efeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" style="width:100%;cursor:pointer;">
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-title">The Space</div>
+            <div class="service-box">
+                <div class="service-text">
+                    <p><i class="fas fa-fw fa-male"></i> Max People:4</p>
+                    <p><i class="fas fa-fw fa-bath"></i> Bathrooms:2</p>
+                    <p><i class="fas fa-fw fa-bed"></i> Bedrooms:1</p>
+                </div>
+                <div class="service-text">
+                    <p><i class="fas fa-fw fa-clock"></i> Check In: After 3PM</p>
+                    <p><i class="far fa-fw fa-clock"></i> Check Out: 12PM</p>
+                </div>
+            </div>
+            <hr>
+            <div class="service-title">Amenities</div>
+            <div class="service-box">
+                <div class="service-text">
+                    <p><i class="fas fa-fw fa-shower"></i> Shower</p>
+                    <p><i class="fas fa-fw fa-wifi"></i> WiFi</p>
+                    <p><i class="fas fa-fw fa-tv"></i> TV</p>
+                </div>
+                <div class="service-text">
+                    <p><i class="fas fa-fw fa-utensils"></i> Kitchen</p>
+                    <p><i class="fas fa-fw fa-thermometer-three-quarters"></i> Heating</p>
+                    <p><i class="fas fa-fw fa-wheelchair"></i> Accessible</p>
+                </div>
+            </div>
+            <hr>
+            <div class="service-title">Extra Info</div>
+            <p class="my-16">Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="my-16">We accept: <i class="far fa-fw fa-credit-card"></i><i class="fab fa-fw fa-cc-mastercard"></i><i class="fab fa-fw fa-cc-paypal"></i><i class="fab fa-fw fa-cc-paypal"></i>
+            </p>
+            <hr>
+            <div class="service-title">Rules</div>
+            <p class="my-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="my-16">Subscribe to receive updates on available dates and special offers.
+            </p>
+            <p>
+                <button class="btn mainbtn">Subscribe</button>
+            </p>
+            <hr>
+            <div class="contact-title">Contact</div>
+            <p class="my-16">
+                <i class="fas fa-map-marker-alt"></i> Chicago, US<br>
+                <i class="fas fa-phone"></i> Phone: +00 151515<br>
+                <i class="fas fa-envelope"></i> Email: mail@mail.com
+            </p>
+            <p class="my-16">Questions? Go ahead, ask them:</p>
+            <form>
+                <p class="bd-outline"><input type="text" placeholder="Name" required name="Name"></p>
+                <p class="bd-outline"><input type="text" placeholder="Email" required name="Email"></p>
+                <p class="bd-outline"><input type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="btn mainbtn">Send a Message</button>
+                </p>
+            </form>
+
+        </div>
+        <footer class="footer">
+            <p>Powered by w3.css</p>
+        </footer>
+    </div>
+</div>
+
+
+
+
+
+
+
+
